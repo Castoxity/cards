@@ -1,116 +1,112 @@
-*{
-    margin:0;
-    padding:0;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk";
 }
 
-.CardParent{
-    width:100%;
-    display:flex;
-    flex-wrap:nowrap;
-    /* align-items: center; */
+.CardParent {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap:2%;
-    padding-top:5em;
+    gap: 2%;
+    padding-top: 5em;
 }
 
-.CardContent{
-    padding:30px;
+.CardContent {
+    padding: 30px;
 }
 
 .Card1,
 .Card2,
-.Card3{
-    width:28%;
-    /* displaY:flex;
-    flex-direction: column;
-    justify-content: center; */
+.Card3 {
+    width: 28%;
     align-items: center;
-    border:none;
-    border-radius:8px;
-    background-color:#f9f9f9;
-    transition: color 0.5s ease-in;
-    transition:background-color 0.7s ease-in-out;
+    border: none;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: color 0.5s ease-in, background-color 0.5s ease-in-out;
 }
 
 .CardIcon,
-.CardText{
-    display:flex;
+.CardText {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .Card1 i,
 .Card2 i,
-.Card3 i{
-    padding:10px;
-    scale:2;
+.Card3 i {
+    padding: 10px;
+    scale: 2;
     transition: color 0.3s ease-in-out;
-    overflow:hidden;
-
+    overflow: hidden;
 }
 
 .Card1:hover .fa-couch,
 .Card2:hover .fa-city,
-.Card3:hover .fa-hotel
-{
-color:white;
+.Card3:hover .fa-hotel {
+    color: white;
 }
 
 .Card1:hover,
 .Card2:hover,
-.Card3:hover{
-    color:white;
-    background-color:black;
+.Card3:hover {
+    color: white;
+    background-color: black;
 }
 
-.CardButton{
-    padding-top:7px;
-    padding-right:20px;
-    padding-bottom:8px;
-    display:flex;
+.CardButton {
+    padding-top: 7px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    display: flex;
     justify-content: right;
-    background-color:transparent;
-    height:30px;
-    margin-left:67%;
-    width:28%;
+    background-color: transparent;
+    height: 30px;
+    margin-left: 67%;
+    width: 28%;
     border-radius: 10px;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
+    position: relative;
+    overflow: hidden;
 }
 
-#ReadInt{
-    padding-right:30px;
-    padding-left:30px;
-    padding-top:5px;
-    padding-bottom:5px;
-    background-color:navy;
-    color:white;
-    border:none;
-    outline:none;
-    cursor:pointer;
-    position:fixed;
-    border-radius:8px;
-    display:none;
+#ReadInt {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: navy;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: -100%;
+    border-radius: 8px;
+    transition: right 0.4s ease-in-out;
 }
 
 .Card1:hover #ReadInt,
 .Card2:hover #ReadInt,
-.Card3:hover #ReadInt
-{
-    display:block;
+.Card3:hover #ReadInt {
+    right: 20px;
 }
 
 .Card1:hover .CardButton,
 .Card2:hover .CardButton,
-.Card3:hover .CardButton{
-    background-color:white;
-    
+.Card3:hover .CardButton {
+    background-color: white;
 }
 
 a:link,
-a:visited{
-    color:white;
+a:visited {
+    color: white;
     text-decoration: none;
-    text-decoration-line: none;
 }
